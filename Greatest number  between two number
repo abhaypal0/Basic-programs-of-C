@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int a,b;
+printf("input the value of a=\n");
+scanf("%d",&a);
+printf("input the value of b=\n");
+scanf("%d",&b);
+if(a>b)
+
+    printf("a is greatest number\n");
+
+    else
+    printf("b is greatest number\n");
+
+getch();
+}
