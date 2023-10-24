@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    char opt;
+    int n1,n2,n;
+    float res;
+    printf("choose an operate(+,-,*,/)to perform the operation in c calculator\n");
+    scanf("%c",&opt);//take an operator
+    if(opt=='/')
+{
+    printf("you have selected:division");
+}
+else if(opt=='*')
+{
+    printf("you have selected:multiplication");
+}
+    else if (opt=='-')
+    {
+    printf("you have selected:substraction");
+    }
+    else if(opt=='+')
+    {
+    printf("you have selected:subtraction");
+    }
+    else if(opt=='+')
+    {
+        printf("you have selected:Addition");
+
+    }
+    {
+        printf("\n Enter the first number:");
+    }
+    scanf("%d",&n1); //take  first number
+    printf("Enter the second number:");
+    scanf("%d",&n2); //take second number
+     switch(opt)
+     {
+        case'+':
+        res=n1+n2; //add two numbers
+        printf("addition of %d and %d is:%.2f",n1,n2,res);
+        break;
+        case'-':
+        res=n1-n2; //substract two numnbers
+        printf("substraction of %d and %d is: %.2f",n1,n2,res);
+        break;
+        case'*':
+        res=n1*n2; //multiply two numbers
+        printf("multiplication of %d and %d is:%.2f",n1,n2,res);
+        break;
+        case'/':
+        if(n==0) //if n2==0,take another number
+        {
+            printf("\ndivisor cannot be zero .please enter another value");
+            scanf("%d",&n2);
+        }        
+        res=n1/n2; //divide two numbers
+        printf("division of %d and %d is:%2f",n1,n2,res);
+        break;
+        default:/*use default to print default message if any condition is not satisfied*/
+        printf("something is wrong !! please check the options ");
+     }
+     getch();
+     
+     }
