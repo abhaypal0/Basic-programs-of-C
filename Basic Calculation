@@ -1,0 +1,42 @@
+// For Basic calculation code
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a,b,N,sum,sub,div,mutli;
+    printf("Enter the value of a = \n");
+    scanf("%d",&a);
+    
+    printf("Enter the value of b = \n");
+    scanf("%d",&b);
+    printf("What do you want??\n");
+    printf("For Addition : 1\n");
+    printf("For Substraction : 2\n");
+    printf("For Multiplication : 3\n");
+    printf("For Division : 4\n");
+
+    printf("Enter the value of N (1 to 40) : \n");
+    scanf("%d",&N);
+    while(N)
+    {
+        case 1:
+        sum=a+b;
+        printf("Sum = %d",sum);
+        break;
+        case 2:
+        sub=a-b;
+        printf("Substraction = %d",sub);
+        break;
+        case 3:
+        mutli=a*b;
+        printf("Multiplication = %d",mutli);
+        break;
+        case 4:
+        div=a/b;
+        printf("Division = %d",div);
+        default:
+        printf("Invalid Input");
+        break;
+    }
+    getch();
+}
