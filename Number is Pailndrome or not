@@ -1,0 +1,25 @@
+//print number is pailndrome or not
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int N,temp,rem,rev=0;
+    printf("Enter the value of N = ");
+    scanf("%d",&N);
+    temp=N;
+    while(N>0)
+    {
+        rem=N%10;
+        rev=rev*10+rem;
+        N=N/10;
+    }
+    if(temp==rev)
+    {
+        printf("Number is Pailndrome");
+    }
+    else
+    {
+        printf("Number is Not Pailndrome");
+    }
+    getch();
+}
