@@ -1,0 +1,26 @@
+//print number is Armstrong or Not
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int N,temp,rem,cube,sum=0;
+    printf("Enter the value of N = ");
+    scanf("%d",&N);
+    temp=N;
+    while(N>0)
+    {
+        rem=N%10;
+        cube=rem*rem*rem;
+        sum=sum+cube;
+        N=N/10;
+    }
+    if(temp==sum)
+    {
+        printf("Number is Armstrong");
+    }
+    else
+    {
+        printf("Number is Not Armstrong");
+    }
+    getch();
+}
