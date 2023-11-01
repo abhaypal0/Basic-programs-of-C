@@ -15,11 +15,11 @@ int main()
     }
     if(temp==rev)
     {
-        printf("Number is Pailndrome");
+        printf("Number is Palindrome");
     }
     else
     {
-        printf("Number is Not Pailndrome");
+        printf("Number is Not Palindrome");
     }
     getch();
 }
