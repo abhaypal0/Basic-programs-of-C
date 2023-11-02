@@ -9,10 +9,10 @@ int main()
     switch(N%2)//this gives value 0 or 1
     {
         case 0:
-        printf("Even");
+        printf("Even Number");
         break;
         case 1:
-        printf("Odd");
+        printf("Odd Number");
         break;
         default:
         printf("Invalid Input");
