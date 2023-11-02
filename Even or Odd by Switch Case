@@ -1,0 +1,22 @@
+//code for to check number is even or odd by switch case statement
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int N;
+    printf("Enter the value of N : ");
+    scanf("%d",&N);
+    switch(N%2)//this gives value 0 or 1
+    {
+        case 0:
+        printf("Even");
+        break;
+        case 1:
+        printf("Odd");
+        break;
+        default:
+        printf("Invalid Input");
+        break;
+    }
+    getch();
+}
