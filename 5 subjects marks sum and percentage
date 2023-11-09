@@ -1,0 +1,22 @@
+//to print 5 subjects marks sum and percentage
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int p,c,m,e,h,sum,per;
+    printf("Enter the mark of Physics : ");
+    scanf("%d",&p);
+    printf("Enter the mark of Chemistry : ");
+    scanf("%d",&c);
+    printf("Enter the mark of Mathematics : ");
+    scanf("%d",&m);
+    printf("Enter the mark of English : ");
+    scanf("%d",&e);
+    printf("Enter the mark of Hindi : ");
+    scanf("%d",&h);
+    sum=p+c+m+e+h;
+    per=sum/5;
+    printf("Total Marks : %d\n",sum);
+    printf("Percentage : %d\n",per);
+    getch();
+}
