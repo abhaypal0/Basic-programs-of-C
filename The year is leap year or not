@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int a;
+    printf("Enter the value of a:\n");
+    scanf("%d",&a);
+    {
+        if(a%4==0)
+        printf("The year is leap year");
+        else
+        printf("The year is not leap year");
+    }
+    getch();
+}
