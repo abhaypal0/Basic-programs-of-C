@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int c,F;
+    printf("Enter the celcius value\n");
+    scanf("%d",&c);
+    (F=(9/5)*c+32);
+    printf("Forenheit = %d°F\n",F);
+    getch();
+}
