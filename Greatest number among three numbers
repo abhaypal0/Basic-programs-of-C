@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter the value of a:\n");
+    scanf("%d", &a);
+    printf("Enter the value of b:\n");
+    scanf("%d", &b);
+    printf("Enter the value of c:\n");
+    scanf("%d", &c);
+    if (a > b) 
+        {
+           
+            printf("a is greatest number");
+        }
+    if (b > c)
+    {
+        printf("b is greatest number");
+    }
+    else
+    {
+        printf("c is greatest number");
+    }
+
+    getch();
+}
