@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int sum=0,i;
+  
+    for(i=1;i<=50;i++)
+    {
+        sum=sum+i;
+    }
+        printf("%d",sum);
+    
+    getch();
+}
