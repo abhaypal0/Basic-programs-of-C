@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[100],n,num,l,u,m,flag=0,i;
+    printf("Enter the number of element you want");
+    scanf("%d",&n);
+    printf("enter %d element",n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter an element to be searched");
+    scanf("%d",&num);
+    l=0;
+    u=n-1;
+    while(l<=u)
+    {
+        m=(l+u)/2;
+        if(num==a[m])
+        {
+            flag++;
+            break;
+        }
+    
+        else if(num<a[m])
+    {
+        u=m-1;
+    }
+    else{
+        l=m+1;
+    }
+    }
+    if(flag>0)
+    {
+        printf("Number found");
+    }
+    else{
+        printf("Number is not found");
+    }
+    getch();
+}
