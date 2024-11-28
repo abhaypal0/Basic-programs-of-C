@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    float dist,fuel,avg;
+    printf("Enter the travelled distance : ");
+    scanf("%f",&dist);
+    printf("Enter spent fuel : ");
+    scanf("%f",&fuel);
+    avg=dist/fuel;
+    printf("Average consumption (km/lt) %.2f",avg);
+    return 0;
+}
